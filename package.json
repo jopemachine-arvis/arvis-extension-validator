@@ -1,25 +1,31 @@
 {
-	"name": "unicorn-fun-cli",
-	"version": "0.0.0",
-	"description": "My awesome command-line tool",
+	"name": "@jopemachine/arvis-extension-validator",
+	"version": "0.0.1",
+	"description": "Extension validator for Arvis",
 	"license": "MIT",
-	"repository": "YOUR-GITHUB-USERNAME/unicorn-fun-cli",
+	"repository": "jopemachine/arvis-extension-validator",
 	"author": {
-		"name": "YOUR NAME",
-		"email": "YOUR EMAIL",
-		"url": "YOUR WEBSITE"
+		"name": "jopemachine",
+		"email": "jopemachine@gmail.com"
 	},
+	"main": "dist/index.js",
 	"bin": {
-		"unicorn-fun": "cli.js"
+		"arvis-validate": "dist/cli.js"
 	},
 	"engines": {
 		"node": ">=8"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": "xo && ava",
+		"build": "cp external/meow/index.d.ts node_modules/meow/index.d.ts && tsc"
 	},
 	"files": [
-		"cli.js"
+		"dist/**",
+		"package.json",
+		"readme.md",
+		"workflow-schema.json",
+		"plugin-schema.json",
+		"license"
 	],
 	"keywords": [
 		"cli",
@@ -28,12 +34,16 @@
 		"fun"
 	],
 	"dependencies": {
-		"meow": "^5.0.0",
-		"unicorn-fun": "^0.0.0"
+		"fs-extra": "^10.0.0",
+		"jsonschema": "^1.4.0",
+		"meow": "^5.0.0"
 	},
 	"devDependencies": {
+		"@types/fs-extra": "^9.0.11",
+		"@types/meow": "^6.0.0",
 		"ava": "^2.1.0",
 		"execa": "^2.0.0",
+		"typescript": "^4.3.2",
 		"xo": "^0.24.0"
 	}
 }

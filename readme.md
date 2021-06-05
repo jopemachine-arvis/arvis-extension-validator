@@ -1,4 +1,4 @@
-# node-cli-boilerplate
+# arvis-extension-validator
 
 > Boilerplate to kickstart creating a Node.js command-line tool
 
@@ -34,24 +34,12 @@ There's also a [Yeoman generator](https://github.com/sindresorhus/generator-nm).
 ## Install
 
 ```
-$ npm install --global unicorn-fun-cli
+$ npm install --global arvis-extension-validator
 ```
 
 
 ## Usage
 
 ```
-$ unicorn-fun --help
 
-  Usage
-    $ unicorn-fun [input]
-
-  Options
-    --postfix  Lorem ipsum  [Default: rainbows]
-
-  Examples
-    $ cli-name
-    unicorns & rainbows
-    $ cli-name ponies
-    ponies & rainbows
 ```
