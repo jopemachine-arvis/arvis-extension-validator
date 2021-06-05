@@ -1,6 +1,6 @@
 {
 	"name": "@jopemachine/arvis-extension-validator",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Extension validator for Arvis",
 	"license": "MIT",
 	"repository": "jopemachine/arvis-extension-validator",
@@ -28,12 +28,10 @@
 		"license"
 	],
 	"keywords": [
-		"cli",
-		"cli-app",
-		"unicorn",
-		"fun"
+		"arvis"
 	],
 	"dependencies": {
+		"chalk": "^4.1.1",
 		"fs-extra": "^10.0.0",
 		"jsonschema": "^1.4.0",
 		"meow": "^5.0.0"
