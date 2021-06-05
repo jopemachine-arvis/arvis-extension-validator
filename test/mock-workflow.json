@@ -1,0 +1,207 @@
+{
+    "$schema": "./workflow-schema.json",
+    "createdby": "jopemachine",
+    "name": "mock-workflow",
+    "enabled": true,
+    "commands": [
+        {
+            "type": "keyword",
+            "command": "t1",
+            "title": "Test 1 - keyword-script",
+            "subtitle": "",
+            "arg_type": "no",
+            "action": [
+                {
+                    "modifiers": "normal",
+                    "type": "script",
+                    "script": "node createFile.js"
+                }
+            ]
+        },
+        {
+            "type": "scriptfilter",
+            "command": "t2",
+            "title": "Test 2 - scriptfilter + if",
+            "script_filter": "node scriptfilter.js {query}",
+            "running_subtext": "Searching...",
+            "withspace": true,
+            "arg_type": "optional",
+            "action": [
+                {
+                    "modifiers": "normal",
+                    "type": "args",
+                    "arg": "{query}",
+                    "action": [
+                        {
+                            "modifiers": "normal",
+                            "type": "cond",
+                            "if": {
+                                "cond": "5 <= 10",
+                                "action": {
+                                    "then": [
+                                        {
+                                            "modifiers": "normal",
+                                            "type": "script",
+                                            "script": "node createFile.js {query}"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scriptfilter",
+            "command": "t3",
+            "title": "Test 3 - scriptfilter + scriptfilter",
+            "script_filter": "node scriptfilter.js {query}",
+            "running_subtext": "Searching...",
+            "withspace": true,
+            "arg_type": "optional",
+            "action": [
+                {
+                    "type": "scriptfilter",
+                    "arg": "{query}",
+                    "script_filter": "node scriptfilter.js {query}",
+                    "running_subtext": "Searching...",
+                    "withspace": true,
+                    "action": [
+                        {
+                            "type": "scriptfilter",
+                            "arg": "{query}",
+                            "script_filter": "node scriptfilter.js {query}",
+                            "running_subtext": "Searching...",
+                            "withspace": true,
+                            "action": [
+                                {
+                                    "modifiers": "normal",
+                                    "type": "script",
+                                    "script": "node createFile.js"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "keyword",
+            "command": "t4",
+            "title": "Test 4 - muitiple actions",
+            "subtitle": "",
+            "arg_type": "no",
+            "action": [
+                {
+                    "modifiers": "normal",
+                    "type": "script",
+                    "script": "node createFile.js 'abc'",
+                    "action": [
+                        {
+                            "modifiers": "normal",
+                            "type": "notification",
+                            "title": "File created"
+                        },
+                        {
+                            "modifiers": "normal",
+                            "type": "open",
+                            "target": "https://www.google.co.kr/"
+                        }
+                    ]
+                },
+                {
+                    "modifiers": "normal",
+                    "type": "clipboard",
+                    "text": "def",
+                    "action": [
+                        {
+                            "modifiers": "normal",
+                            "type": "notification",
+                            "title": "Clipboard copied"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "keyword",
+            "command": "t5",
+            "title": "Test 5 - Unavailable",
+            "subtitle": "",
+            "script": "",
+            "action": [
+                {
+                    "type": "keyword",
+                    "command": "",
+                    "title": "",
+                    "subtitle": "",
+                    "script": ""
+                }
+            ]
+        },
+        {
+            "type": "scriptfilter",
+            "command": "t6",
+            "title": "Test 6 - keyword waiting test",
+            "subtitle": "",
+            "script_filter": "node scriptfilter.js",
+            "running_subtext": "",
+            "withspace": true,
+            "action": [
+                {
+                    "type": "keyword",
+                    "command": "",
+                    "title": "Title test",
+                    "subtitle": "",
+                    "script": "",
+                    "action": [
+                        {
+                            "type": "notification",
+                            "modifiers": "normal",
+                            "title": "Complete!",
+                            "text": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "hotkey",
+            "hotkey": "Double opt",
+            "action": [
+                {
+                    "type": "keyword",
+                    "title": "Test 7 - hotkey + keyword (keyword waiting 2)",
+                    "subtitle": "",
+                    "script": "",
+                    "action": [
+                        {
+                            "type": "notification",
+                            "modifiers": "normal",
+                            "title": "Comp!",
+                            "text": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "scriptfilter",
+            "command": "t8",
+            "title": "Test 8 - scriptfilter with withspace false",
+            "subtitle": "",
+            "script_filter": "node scriptfilter.js",
+            "running_subtext": "a",
+            "withspace": false,
+            "action": [
+                {
+                    "type": "notification",
+                    "modifiers": "normal",
+                    "title": "abc",
+                    "text": ""
+                }
+            ]
+        }
+    ]
+}

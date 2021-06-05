@@ -16,7 +16,7 @@
 		"node": ">=8"
 	},
 	"scripts": {
-		"test": "xo && ava",
+		"test": "ava",
 		"build": "cp external/meow/index.d.ts node_modules/meow/index.d.ts && tsc"
 	},
 	"files": [
