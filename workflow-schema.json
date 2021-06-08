@@ -215,8 +215,10 @@
                         "ctrl",
                         "win",
                         "opt",
+                        "option",
                         "meta",
-                        "shift"
+                        "shift",
+                        "fn"
                     ],
                     "description": "Specific modifier key must be pressed to run",
                     "markdownDescription": "Specific modifier key must be pressed to run"
