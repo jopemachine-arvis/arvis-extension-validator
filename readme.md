@@ -1,6 +1,6 @@
 # arvis-extension-validator
 
-> Cli and library to validate arvis extension
+> [Arvis](https://github.com/jopemachine/arvis) extension's JSON schema, cli and library to validate this.
 
 ## Install
 
