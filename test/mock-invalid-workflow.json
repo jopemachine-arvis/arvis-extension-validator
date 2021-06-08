@@ -1,5 +1,5 @@
 {
-    "$schema": "./workflow-schema.json",
+    "$schema": "../workflow-schema.json",
     "createdby": "jopemachine",
     "enabled": true,
     "commands": [

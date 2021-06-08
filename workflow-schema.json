@@ -236,11 +236,12 @@
         "createdby": {
             "type": "string",
             "description": "Workflow's creator name",
+            "pattern": "^[a-zA-Z]+[a-zA-Z0-9_\\- ]*$",
             "markdownDescription": "Workflow's creator name",
             "defaultSnippets": [
                 {
                     "label": "Workflow's creator name",
-                    "body": "icon.png"
+                    "body": ""
                 }
             ]
         },
@@ -251,7 +252,7 @@
             "defaultSnippets": [
                 {
                     "label": "Workflow's default icon",
-                    "body": ""
+                    "body": "icon.png"
                 }
             ]
         },
@@ -269,6 +270,7 @@
         "name": {
             "type": "string",
             "description": "Workflow's name",
+            "pattern": "^[a-zA-Z]+[a-zA-Z0-9_\\- ]*$",
             "markdownDescription": "Workflow's name",
             "defaultSnippets": [
                 {

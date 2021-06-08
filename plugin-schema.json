@@ -221,10 +221,11 @@
             "type": "string",
             "description": "Plugin's creator name",
             "markdownDescription": "Plugin's creator name",
+            "pattern": "^[a-zA-Z]+[a-zA-Z0-9_\\- ]*$",
             "defaultSnippets": [
                 {
                     "label": "Plugin's creator name",
-                    "body": "icon.png"
+                    "body": ""
                 }
             ]
         },
@@ -235,7 +236,7 @@
             "defaultSnippets": [
                 {
                     "label": "Plugin's default icon",
-                    "body": ""
+                    "body": "icon.png"
                 }
             ]
         },
@@ -254,6 +255,7 @@
             "type": "string",
             "description": "Plugin's name",
             "markdownDescription": "Plugin's name",
+            "pattern": "^[a-zA-Z]+[a-zA-Z0-9_\\- ]*$",
             "defaultSnippets": [
                 {
                     "label": "Plugin's name",
