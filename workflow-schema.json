@@ -337,6 +337,11 @@
             "description": "Target platforms",
             "markdownDescription": "Target platforms"
         },
+        "variables": {
+            "type": "object",
+            "description": "Set the variables to use in the extension",
+            "markdownDescription": "Set the variables to use in the extension"
+        },
         "commands": {
             "type": "array",
             "description": "Workflow's commands",
