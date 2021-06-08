@@ -21,7 +21,8 @@
                 "notification",
                 "open",
                 "script",
-                "scriptfilter"
+                "scriptfilter",
+                "resetInput"
             ]
         },
         "command": {

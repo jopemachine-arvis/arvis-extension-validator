@@ -8,6 +8,23 @@
         "action"
     ],
     "definitions": {
+        "type": {
+            "type": "string",
+            "description": "Action's type",
+            "markdownDescription": "Action's type",
+            "enum": [
+                "args",
+                "clipboard",
+                "cond",
+                "hotkey",
+                "keyword",
+                "notification",
+                "open",
+                "script",
+                "scriptfilter",
+                "resetInput"
+            ]
+        },
         "command": {
             "type": "object",
             "required": [
