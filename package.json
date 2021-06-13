@@ -1,6 +1,6 @@
 {
 	"name": "@jopemachine/arvis-extension-validator",
-	"version": "0.0.6",
+	"version": "0.2.0",
 	"description": "Extension validator for Arvis",
 	"license": "MIT",
 	"repository": "jopemachine/arvis-extension-validator",
@@ -28,7 +28,10 @@
 		"license"
 	],
 	"keywords": [
-		"arvis"
+		"arvis",
+		"jsonschema",
+		"json-validator",
+		"arvis-extension"
 	],
 	"dependencies": {
 		"chalk": "^4.1.1",

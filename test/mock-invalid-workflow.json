@@ -1,6 +1,6 @@
 {
     "$schema": "../workflow-schema.json",
-    "createdby": "jopemachine",
+    "creator": "jopemachine",
     "enabled": true,
     "commands": [
         {
@@ -8,8 +8,8 @@
             "command": "t1",
             "title": "Test 1 - keyword-script",
             "subtitle": "",
-            "arg_type": "no",
-            "action": [
+            "argType": "no",
+            "actions": [
                 {
                     "modifiers": "normal",
                     "type": "script",
@@ -21,22 +21,22 @@
             "type": "scriptfilter",
             "command": "t2",
             "title": "Test 2 - scriptfilter + if",
-            "script_filter": "node scriptfilter.js {query}",
-            "running_subtext": "Searching...",
+            "scriptFilter": "node scriptfilter.js {query}",
+            "runningSubtext": "Searching...",
             "withspace": true,
-            "arg_type": "optional",
-            "action": [
+            "argType": "optional",
+            "actions": [
                 {
                     "modifiers": "normal",
                     "type": "args",
                     "arg": "{query}",
-                    "action": [
+                    "actions": [
                         {
                             "modifiers": "normal",
                             "type": "cond",
                             "if": {
                                 "cond": "5 <= 10",
-                                "action": {
+                                "actions": {
                                     "then": [
                                         {
                                             "modifiers": "normal",
@@ -55,25 +55,25 @@
             "type": "scriptfilter",
             "command": "t3",
             "title": "Test 3 - scriptfilter + scriptfilter",
-            "script_filter": "node scriptfilter.js {query}",
-            "running_subtext": "Searching...",
+            "scriptFilter": "node scriptfilter.js {query}",
+            "runningSubtext": "Searching...",
             "withspace": true,
-            "arg_type": "optional",
-            "action": [
+            "argType": "optional",
+            "actions": [
                 {
                     "type": "scriptfilter",
                     "arg": "{query}",
-                    "script_filter": "node scriptfilter.js {query}",
-                    "running_subtext": "Searching...",
+                    "scriptFilter": "node scriptfilter.js {query}",
+                    "runningSubtext": "Searching...",
                     "withspace": true,
-                    "action": [
+                    "actions": [
                         {
                             "type": "scriptfilter",
                             "arg": "{query}",
-                            "script_filter": "node scriptfilter.js {query}",
-                            "running_subtext": "Searching...",
+                            "scriptFilter": "node scriptfilter.js {query}",
+                            "runningSubtext": "Searching...",
                             "withspace": true,
-                            "action": [
+                            "actions": [
                                 {
                                     "modifiers": "normal",
                                     "type": "script",
@@ -90,13 +90,13 @@
             "command": "t4",
             "title": "Test 4 - muitiple actions",
             "subtitle": "",
-            "arg_type": "no",
-            "action": [
+            "argType": "no",
+            "actions": [
                 {
                     "modifiers": "normal",
                     "type": "script",
                     "script": "node createFile.js 'abc'",
-                    "action": [
+                    "actions": [
                         {
                             "modifiers": "normal",
                             "type": "notification",
@@ -113,7 +113,7 @@
                     "modifiers": "normal",
                     "type": "clipboard",
                     "text": "def",
-                    "action": [
+                    "actions": [
                         {
                             "modifiers": "normal",
                             "type": "notification",
@@ -129,7 +129,7 @@
             "title": "Test 5 - Unavailable",
             "subtitle": "",
             "script": "",
-            "action": [
+            "actions": [
                 {
                     "type": "keyword",
                     "command": "",
@@ -144,17 +144,17 @@
             "command": "t6",
             "title": "Test 6 - keyword waiting test",
             "subtitle": "",
-            "script_filter": "node scriptfilter.js",
-            "running_subtext": "",
+            "scriptFilter": "node scriptfilter.js",
+            "runningSubtext": "",
             "withspace": true,
-            "action": [
+            "actions": [
                 {
                     "type": "keyword",
                     "command": "",
                     "title": "Title test",
                     "subtitle": "",
                     "script": "",
-                    "action": [
+                    "actions": [
                         {
                             "type": "notification",
                             "modifiers": "normal",
@@ -168,13 +168,13 @@
         {
             "type": "hotkey",
             "hotkey": "Double opt",
-            "action": [
+            "actions": [
                 {
                     "type": "keyword",
                     "title": "Test 7 - hotkey + keyword (keyword waiting 2)",
                     "subtitle": "",
                     "script": "",
-                    "action": [
+                    "actions": [
                         {
                             "type": "notification",
                             "modifiers": "normal",
@@ -190,10 +190,10 @@
             "command": "t8",
             "title": "Test 8 - scriptfilter with withspace false",
             "subtitle": "",
-            "script_filter": "node scriptfilter.js",
-            "running_subtext": "a",
+            "scriptFilter": "node scriptfilter.js",
+            "runningSubtext": "a",
             "withspace": false,
-            "action": [
+            "actions": [
                 {
                     "type": "notification",
                     "modifiers": "normal",

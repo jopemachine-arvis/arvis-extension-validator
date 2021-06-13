@@ -4,8 +4,8 @@
     "additionalProperties": false,
     "required": [
         "name",
-        "createdby",
-        "action"
+        "creator",
+        "actions"
     ],
     "definitions": {
         "type": {
@@ -21,7 +21,7 @@
                 "notification",
                 "open",
                 "script",
-                "scriptfilter",
+                "scriptFilter",
                 "resetInput"
             ]
         },
@@ -36,7 +36,7 @@
                     "body": {
                         "type": "hotkey",
                         "hotkey": "",
-                        "action": []
+                        "actions": []
                     }
                 },
                 {
@@ -47,20 +47,20 @@
                         "title": "",
                         "subtitle": "",
                         "script": "",
-                        "action": []
+                        "actions": []
                     }
                 },
                 {
                     "label": "Scriptfilter",
                     "body": {
-                        "type": "scriptfilter",
+                        "type": "scriptFilter",
                         "command": "",
                         "title": "",
                         "subtitle": "",
-                        "script_filter": "",
-                        "running_subtext": "",
+                        "scriptFilter": "",
+                        "runningSubtext": "",
                         "withspace": true,
-                        "action": []
+                        "actions": []
                     }
                 },
                 {
@@ -81,7 +81,7 @@
                         "type": "args",
                         "modifiers": "normal",
                         "arg": "{query}",
-                        "action": []
+                        "actions": []
                     }
                 },
                 {
@@ -126,33 +126,33 @@
                 },
                 "command": {
                     "type": "string",
-                    "description": "[keyword, scriptfilter] Command to search for and execute commands.",
-                    "markdownDescription": "[keyword, scriptfilter] Command to search for and execute commands."
+                    "description": "[keyword, scriptFilter] Command to search for and execute commands.",
+                    "markdownDescription": "[keyword, scriptFilter] Command to search for and execute commands."
                 },
                 "title": {
                     "type": "string",
-                    "description": "[keyword, scriptfilter] Description of the command to display in the search window.",
-                    "markdownDescription": "[keyword, scriptfilter] Description of the command to display in the search window."
+                    "description": "[keyword, scriptFilter] Description of the command to display in the search window.",
+                    "markdownDescription": "[keyword, scriptFilter] Description of the command to display in the search window."
                 },
                 "subtitle": {
                     "type": "string",
-                    "description": "[keyword, scriptfilter] A additional description of the command to display in the search window.",
-                    "markdownDescription": "[keyword, scriptfilter] A additional description of the command to display in the search window."
+                    "description": "[keyword, scriptFilter] A additional description of the command to display in the search window.",
+                    "markdownDescription": "[keyword, scriptFilter] A additional description of the command to display in the search window."
                 },
                 "withspace": {
                     "type": "boolean",
-                    "description": "[scriptfilter] Indicates if space is required after the command to execute it",
-                    "markdownDescription": "[scriptfilter] Indicates if space is required after the command to execute it"
+                    "description": "[scriptFilter] Indicates if space is required after the command to execute it",
+                    "markdownDescription": "[scriptFilter] Indicates if space is required after the command to execute it"
                 },
-                "running_subtext": {
+                "runningSubtext": {
                     "type": "string",
-                    "description": "[scriptfilter] Statement to display while scriptfilter is running.",
-                    "markdownDescription": "[scriptfilter] Statement to display while scriptfilter is running."
+                    "description": "[scriptFilter] Statement to display while scriptFilter is running.",
+                    "markdownDescription": "[scriptFilter] Statement to display while scriptFilter is running."
                 },
-                "script_filter": {
+                "scriptFilter": {
                     "type": "string",
-                    "description": "[scriptfilter] Scriptfilter to execute",
-                    "markdownDescription": "[scriptfilter] Scriptfilter to execute"
+                    "description": "[scriptFilter] Scriptfilter to execute",
+                    "markdownDescription": "[scriptFilter] Scriptfilter to execute"
                 },
                 "script": {
                     "type": "string",
@@ -223,7 +223,7 @@
                     "description": "Specific modifier key must be pressed to run",
                     "markdownDescription": "Specific modifier key must be pressed to run"
                 },
-                "action": {
+                "actions": {
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/command"
@@ -236,7 +236,7 @@
         "$schema": {
             "type": "string"
         },
-        "createdby": {
+        "creator": {
             "type": "string",
             "description": "Plugin's creator name",
             "markdownDescription": "Plugin's creator name",
@@ -348,7 +348,7 @@
                 }
             ]
         },
-        "action": {
+        "actions": {
             "type": "array",
             "items": {
                 "$ref": "#/definitions/command"
