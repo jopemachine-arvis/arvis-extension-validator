@@ -150,17 +150,17 @@
                     "markdownDescription": "[scriptFilter] Statement to display while scriptFilter is running."
                 },
                 "scriptFilter": {
-                    "type": "string",
+                    "type": ["string", "object"],
                     "description": "[scriptFilter] Scriptfilter to execute",
                     "markdownDescription": "[scriptFilter] Scriptfilter to execute"
                 },
                 "script": {
-                    "type": "string",
+                    "type": ["string", "object"],
                     "description": "[script] Script to execute",
                     "markdownDescription": "[script] Script to execute"
                 },
                 "text": {
-                    "type": "string",
+                    "type": ["string", "object"],
                     "description": "",
                     "markdownDescription": ""
                 },
@@ -191,7 +191,7 @@
                     }
                 },
                 "arg": {
-                    "type": "string",
+                    "type": ["string", "object"],
                     "description": "[arg] Select argument",
                     "markdownDescription": "[arg] Select argument",
                     "defaultSnippets": [
@@ -315,7 +315,7 @@
                 }
             ]
         },
-        "webaddress": {
+        "webAddress": {
             "type": "string",
             "description": "Plugin's webaddress url",
             "markdownDescription": "Plugin's webaddress url",

@@ -1,6 +1,6 @@
 {
 	"name": "@jopemachine/arvis-extension-validator",
-	"version": "0.2.0",
+	"version": "0.2.2",
 	"description": "Extension validator for Arvis",
 	"license": "MIT",
 	"repository": "jopemachine/arvis-extension-validator",
