@@ -18,10 +18,10 @@
             ]
         },
         {
-            "type": "scriptfilter",
+            "type": "scriptFilter",
             "command": "t2",
-            "title": "Test 2 - scriptfilter + if",
-            "scriptFilter": "node scriptfilter.js {query}",
+            "title": "Test 2 - scriptFilter + if",
+            "scriptFilter": "node scriptFilter.js {query}",
             "runningSubtext": "Searching...",
             "withspace": true,
             "argType": "optional",
@@ -52,25 +52,25 @@
             ]
         },
         {
-            "type": "scriptfilter",
+            "type": "scriptFilter",
             "command": "t3",
-            "title": "Test 3 - scriptfilter + scriptfilter",
-            "scriptFilter": "node scriptfilter.js {query}",
+            "title": "Test 3 - scriptFilter + scriptFilter",
+            "scriptFilter": "node scriptFilter.js {query}",
             "runningSubtext": "Searching...",
             "withspace": true,
             "argType": "optional",
             "actions": [
                 {
-                    "type": "scriptfilter",
+                    "type": "scriptFilter",
                     "arg": "{query}",
-                    "scriptFilter": "node scriptfilter.js {query}",
+                    "scriptFilter": "node scriptFilter.js {query}",
                     "runningSubtext": "Searching...",
                     "withspace": true,
                     "actions": [
                         {
-                            "type": "scriptfilter",
+                            "type": "scriptFilter",
                             "arg": "{query}",
-                            "scriptFilter": "node scriptfilter.js {query}",
+                            "scriptFilter": "node scriptFilter.js {query}",
                             "runningSubtext": "Searching...",
                             "withspace": true,
                             "actions": [
@@ -140,11 +140,11 @@
             ]
         },
         {
-            "type": "scriptfilter",
+            "type": "scriptFilter",
             "command": "t6",
             "title": "Test 6 - keyword waiting test",
             "subtitle": "",
-            "scriptFilter": "node scriptfilter.js",
+            "scriptFilter": "node scriptFilter.js",
             "runningSubtext": "",
             "withspace": true,
             "actions": [
@@ -186,11 +186,11 @@
             ]
         },
         {
-            "type": "scriptfilter",
+            "type": "scriptFilter",
             "command": "t8",
-            "title": "Test 8 - scriptfilter with withspace false",
+            "title": "Test 8 - scriptFilter with withspace false",
             "subtitle": "",
-            "scriptFilter": "node scriptfilter.js",
+            "scriptFilter": "node scriptFilter.js",
             "runningSubtext": "a",
             "withspace": false,
             "actions": [
