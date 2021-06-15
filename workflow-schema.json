@@ -150,17 +150,26 @@
                     "markdownDescription": "[scriptFilter] Statement to display while scriptFilter is running."
                 },
                 "scriptFilter": {
-                    "type": ["string", "object"],
+                    "type": [
+                        "string",
+                        "object"
+                    ],
                     "description": "[scriptFilter] Scriptfilter to execute",
                     "markdownDescription": "[scriptFilter] Scriptfilter to execute"
                 },
                 "script": {
-                    "type": ["string", "object"],
+                    "type": [
+                        "string",
+                        "object"
+                    ],
                     "description": "[script] Script to execute",
                     "markdownDescription": "[script] Script to execute"
                 },
                 "text": {
-                    "type": ["string", "object"],
+                    "type": [
+                        "string",
+                        "object"
+                    ],
                     "description": "",
                     "markdownDescription": ""
                 },
@@ -191,7 +200,10 @@
                     }
                 },
                 "arg": {
-                    "type": ["string", "object"],
+                    "type": [
+                        "string",
+                        "object"
+                    ],
                     "description": "[arg] Select argument",
                     "markdownDescription": "[arg] Select argument",
                     "defaultSnippets": [
@@ -312,6 +324,17 @@
                 {
                     "label": "Workflow's version",
                     "body": "0.0.1"
+                }
+            ]
+        },
+        "latest": {
+            "type": "string",
+            "description": "Workflow's latest version",
+            "markdownDescription": "Workflow's latest version. Mark this value from your script when update is needed",
+            "defaultSnippets": [
+                {
+                    "label": "Workflow's latest version",
+                    "body": ""
                 }
             ]
         },
