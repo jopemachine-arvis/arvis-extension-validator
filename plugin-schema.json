@@ -137,7 +137,7 @@
         "actions": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/definitions.json#/definitions/command"
+                "$ref": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/schema/definitions.json#/definitions/command"
             }
         },
         "platform": {
