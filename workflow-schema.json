@@ -70,8 +70,10 @@
                         "modifiers": "normal",
                         "if": {
                             "cond": "",
-                            "then": [],
-                            "else": []
+                            "actions": {
+                                "then": [],
+                                "else": []
+                            }
                         }
                     }
                 },
@@ -105,7 +107,7 @@
                     "body": {
                         "type": "notification",
                         "modifiers": "normal",
-                        "title": "",
+                        "title": "{query}",
                         "text": ""
                     }
                 },
