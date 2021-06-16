@@ -13,6 +13,12 @@
 $ npm install arvis-extension-validator
 ```
 
+## Schema
+
+All schema files could be developed in the `schema` folder.
+
+The files in the project root path are there to be imported from online directly.
+
 ## Cli Usage
 
 ```

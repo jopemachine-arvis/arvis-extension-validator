@@ -1,5 +1,5 @@
 {
-    "$schema": "../plugin-schema.json",
+    "$schema": "../schema/plugin.json",
     "creator": "jopemachine",
     "name": "arvis-freedict-plugin",
     "enabled": true,

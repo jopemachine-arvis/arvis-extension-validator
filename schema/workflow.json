@@ -178,7 +178,7 @@
                 }
             ],
             "items": {
-                "$ref": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/definitions.json#/definitions/command"
+                "$ref": "./definitions.json#/definitions/command"
             }
         }
     }

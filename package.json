@@ -23,8 +23,7 @@
 		"dist/**",
 		"package.json",
 		"readme.md",
-		"workflow-schema.json",
-		"plugin-schema.json",
+		"schema/**",
 		"license"
 	],
 	"keywords": [
