@@ -136,7 +136,8 @@
                     "command": "",
                     "title": "",
                     "subtitle": "",
-                    "script": ""
+                    "script": "",
+                    "actions": []
                 }
             ]
         },

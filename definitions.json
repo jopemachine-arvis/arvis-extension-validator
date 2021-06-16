@@ -1,0 +1,501 @@
+{
+    "id": "definitions",
+    "definitions": {
+        "title": {
+            "type": "string",
+            "description": "[keyword, scriptFilter] Description of the command to display in the search window.",
+            "markdownDescription": "[keyword, scriptFilter] Description of the command to display in the search window."
+        },
+        "subtitle": {
+            "type": "string",
+            "description": "[keyword, scriptFilter] A additional description of the command to display in the search window.",
+            "markdownDescription": "[keyword, scriptFilter] A additional description of the command to display in the search window."
+        },
+        "withspace": {
+            "type": "boolean",
+            "description": "[scriptFilter] Indicates if space is required after the command to execute it",
+            "markdownDescription": "[scriptFilter] Indicates if space is required after the command to execute it"
+        },
+        "runningSubtext": {
+            "type": "string",
+            "description": "[scriptFilter] Statement to display while scriptFilter is running.",
+            "markdownDescription": "[scriptFilter] Statement to display while scriptFilter is running."
+        },
+        "scriptFilter": {
+            "type": [
+                "string",
+                "object"
+            ],
+            "description": "[scriptFilter] Scriptfilter to execute",
+            "markdownDescription": "[scriptFilter] Scriptfilter to execute"
+        },
+        "script": {
+            "type": [
+                "string",
+                "object"
+            ],
+            "description": "[script] Script to execute",
+            "markdownDescription": "[script] Script to execute"
+        },
+        "clipboardText": {
+            "type": "string",
+            "description": "[clipboard] Text to copy to clipboard",
+            "markdownDescription": "[clipboard] Text to copy to clipboard"
+        },
+        "notificationText": {
+            "type": "string",
+            "description": "[notification] Text to show",
+            "markdownDescription": "[notification] Text to show"
+        },
+        "if": {
+            "type": "object",
+            "description": "[cond] Divides the flow of execution by conditions",
+            "markdownDescription": "[cond] Divides the flow of execution by conditions"
+        },
+        "cond": {
+            "type": "string",
+            "description": "[cond] Conditions",
+            "markdownDescription": "[cond] Conditions"
+        },
+        "then": {
+            "type": "array",
+            "description": "[cond] If 'cond' is true execute these actions",
+            "markdownDescription": "[cond] If 'cond' is true execute these actions",
+            "items": {
+                "$ref": "#/definitions/command"
+            }
+        },
+        "else": {
+            "type": "array",
+            "description": "[cond] If 'cond' is false execute these actions",
+            "markdownDescription": "[cond] If 'cond' is false execute these actions",
+            "items": {
+                "$ref": "#/definitions/command"
+            }
+        },
+        "arg": {
+            "type": [
+                "string",
+                "object"
+            ],
+            "description": "[arg] Select argument",
+            "markdownDescription": "[arg] Select argument",
+            "defaultSnippets": [
+                {
+                    "label": "[arg] Select argument",
+                    "body": "${query}"
+                }
+            ]
+        },
+        "target": {
+            "type": "string",
+            "description": "[open] target to open (url, file path)",
+            "markdownDescription": "[open] target to open (url, file path)"
+        },
+        "argType": {
+            "type": "string",
+            "enum": [
+                "no",
+                "optional",
+                "required"
+            ],
+            "description": "[keyword, scriptFilter] Defines whether an argument is required for action execution",
+            "markdownDescription": "[keyword, scriptFilter] Defines whether an argument is required for action execution"
+        },
+        "commandStr": {
+            "type": "string",
+            "description": "[keyword, scriptFilter] Command to search for and execute commands.",
+            "markdownDescription": "[keyword, scriptFilter] Command to search for and execute commands."
+        },
+        "newInput": {
+            "type": "string",
+            "description": "[resetInput] Renew Arvis searchbar's value with this string",
+            "markdownDescription": "[resetInput] Renew Arvis searchbar's value with this string"
+        },
+        "hotkey": {
+            "type": "string",
+            "description": "[hotkey] Hotkey to execute Action",
+            "markdownDescription": "[hotkey] Hotkey to execute Action"
+        },
+        "type": {
+            "type": "string",
+            "description": "Action's type",
+            "markdownDescription": "Action's type",
+            "enum": [
+                "args",
+                "clipboard",
+                "cond",
+                "hotkey",
+                "keyword",
+                "notification",
+                "open",
+                "script",
+                "scriptFilter",
+                "resetInput"
+            ]
+        },
+        "modifiers": {
+            "type": "string",
+            "enum": [
+                "normal",
+                "cmd",
+                "alt",
+                "ctrl",
+                "win",
+                "opt",
+                "option",
+                "meta",
+                "shift",
+                "fn"
+            ],
+            "description": "Specific modifier key must be pressed to run",
+            "markdownDescription": "Specific modifier key must be pressed to run"
+        },
+        "actions": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/command"
+            }
+        },
+        "command": {
+            "type": "object",
+            "oneOf": [
+                {
+                    "type": "object",
+                    "required": [
+                        "target"
+                    ],
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "open"
+                            ]
+                        },
+                        "modifiers": {
+                            "$ref": "#/definitions/modifiers"
+                        },
+                        "target": {
+                            "$ref": "#/definitions/target"
+                        },
+                        "actions": {
+                            "$ref": "#/definitions/actions"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "required": [
+                        "text"
+                    ],
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "clipboard"
+                            ]
+                        },
+                        "modifiers": {
+                            "$ref": "#/definitions/modifiers"
+                        },
+                        "text": {
+                            "$ref": "#/definitions/clipboardText"
+                        },
+                        "actions": {
+                            "$ref": "#/definitions/actions"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "required": [
+                        "script"
+                    ],
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "script"
+                            ]
+                        },
+                        "modifiers": {
+                            "$ref": "#/definitions/modifiers"
+                        },
+                        "script": {
+                            "$ref": "#/definitions/script"
+                        },
+                        "actions": {
+                            "$ref": "#/definitions/actions"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "required": [
+                        "scriptFilter"
+                    ],
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "scriptFilter"
+                            ]
+                        },
+                        "modifiers": {
+                            "$ref": "#/definitions/modifiers"
+                        },
+                        "title": {
+                            "$ref": "#/definitions/title"
+                        },
+                        "runningSubtext": {
+                            "$ref": "#/definitions/runningSubtext"
+                        },
+                        "scriptFilter": {
+                            "$ref": "#/definitions/scriptFilter"
+                        },
+                        "withspace": {
+                            "$ref": "#/definitions/withspace"
+                        },
+                        "command": {
+                            "$ref": "#/definitions/commandStr"
+                        },
+                        "argType": {
+                            "$ref": "#/definitions/argType"
+                        },
+                        "actions": {
+                            "$ref": "#/definitions/actions"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "required": [
+                        "title"
+                    ],
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "notification"
+                            ]
+                        },
+                        "modifiers": {
+                            "$ref": "#/definitions/modifiers"
+                        },
+                        "title": {
+                            "$ref": "#/definitions/title"
+                        },
+                        "text": {
+                            "$ref": "#/definitions/notificationText"
+                        },
+                        "actions": {
+                            "$ref": "#/definitions/actions"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "required": [
+                        "if"
+                    ],
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "cond"
+                            ]
+                        },
+                        "modifiers": {
+                            "$ref": "#/definitions/modifiers"
+                        },
+                        "if": {
+                            "$ref": "#/definitions/if"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "required": [
+                        "arg"
+                    ],
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "args"
+                            ]
+                        },
+                        "modifiers": {
+                            "$ref": "#/definitions/modifiers"
+                        },
+                        "arg": {
+                            "$ref": "#/definitions/arg"
+                        },
+                        "actions": {
+                            "$ref": "#/definitions/actions"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "required": [
+                        "actions"
+                    ],
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "keyword"
+                            ]
+                        },
+                        "modifiers": {
+                            "$ref": "#/definitions/modifiers"
+                        },
+                        "title": {
+                            "$ref": "#/definitions/title"
+                        },
+                        "subtitle": {
+                            "$ref": "#/definitions/subtitle"
+                        },
+                        "command": {
+                            "$ref": "#/definitions/commandStr"
+                        },
+                        "argType": {
+                            "$ref": "#/definitions/argType"
+                        },
+                        "actions": {
+                            "$ref": "#/definitions/actions"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "required": [
+                        "hotkey"
+                    ],
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "hotkey"
+                            ]
+                        },
+                        "hotkey": {
+                            "$ref": "#/definitions/hotkey"
+                        },
+                        "actions": {
+                            "$ref": "#/definitions/actions"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "required": [
+                        "newInput"
+                    ],
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "resetInput"
+                            ]
+                        },
+                        "newInput": {
+                            "$ref": "#/definitions/newInput"
+                        }
+                    }
+                }
+            ],
+            "defaultSnippets": [
+                {
+                    "label": "Hotkey",
+                    "body": {
+                        "type": "hotkey",
+                        "hotkey": "",
+                        "actions": []
+                    }
+                },
+                {
+                    "label": "Keyword",
+                    "body": {
+                        "type": "keyword",
+                        "command": "",
+                        "title": "",
+                        "subtitle": "",
+                        "script": "",
+                        "actions": []
+                    }
+                },
+                {
+                    "label": "Scriptfilter",
+                    "body": {
+                        "type": "scriptFilter",
+                        "command": "",
+                        "title": "",
+                        "subtitle": "",
+                        "scriptFilter": "",
+                        "runningSubtext": "",
+                        "withspace": true,
+                        "actions": []
+                    }
+                },
+                {
+                    "label": "Conditional",
+                    "body": {
+                        "type": "cond",
+                        "modifiers": "normal",
+                        "if": {
+                            "cond": "",
+                            "actions": {
+                                "then": [],
+                                "else": []
+                            }
+                        }
+                    }
+                },
+                {
+                    "label": "Argument",
+                    "body": {
+                        "type": "args",
+                        "modifiers": "normal",
+                        "arg": "{query}",
+                        "actions": []
+                    }
+                },
+                {
+                    "label": "Script",
+                    "body": {
+                        "type": "script",
+                        "modifiers": "normal",
+                        "script": ""
+                    }
+                },
+                {
+                    "label": "Open",
+                    "body": {
+                        "type": "open",
+                        "modifiers": "normal",
+                        "target": "{query}"
+                    }
+                },
+                {
+                    "label": "Notification",
+                    "body": {
+                        "type": "notification",
+                        "modifiers": "normal",
+                        "title": "{query}",
+                        "text": ""
+                    }
+                },
+                {
+                    "label": "Clipboard",
+                    "body": {
+                        "type": "clipboard",
+                        "modifiers": "normal",
+                        "text": "{query}"
+                    }
+                }
+            ]
+        }
+    }
+}

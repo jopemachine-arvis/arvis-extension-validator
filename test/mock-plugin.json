@@ -1,0 +1,37 @@
+{
+    "$schema": "../plugin-schema.json",
+    "creator": "jopemachine",
+    "name": "arvis-freedict-plugin",
+    "enabled": true,
+    "description": "Dictionary plugin for Arvis using dictionaryapi.dev",
+    "readme": "",
+    "version": "0.0.1",
+    "defaultIcon": "icon.png",
+    "main": "index.js",
+    "webAddress": "https://github.com/jopemachine/arvis-freedict-plugin",
+    "actions": [
+        {
+            "type": "cond",
+            "modifiers": "normal",
+            "if": {
+                "cond": "{var:action} == 'clipboard'",
+                "actions": {
+                    "then": [
+                        {
+                            "type": "clipboard",
+                            "modifiers": "normal",
+                            "text": "{query}"
+                        }
+                    ],
+                    "else": [
+                        {
+                            "type": "open",
+                            "modifiers": "normal",
+                            "target": "{query}"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

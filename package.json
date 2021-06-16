@@ -1,6 +1,6 @@
 {
 	"name": "arvis-extension-validator",
-	"version": "0.0.3",
+	"version": "0.1.0",
 	"description": "Extension validator for Arvis",
 	"license": "MIT",
 	"repository": "jopemachine/arvis-extension-validator",
@@ -50,7 +50,7 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "npm run test"
+			"pre-commit": ""
 		}
 	}
 }
