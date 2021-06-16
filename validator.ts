@@ -1,10 +1,12 @@
 import { Validator } from "jsonschema";
 const workflowSchema = require("../workflow-schema.json");
 const pluginSchema = require("../plugin-schema.json");
+const definitionSchema = require("../definitions.json");
 
 const validator = new Validator();
-validator.addSchema({ id: "/Workflow", ...workflowSchema }, "/Workflow");
-validator.addSchema({ id: "/Plugin", ...pluginSchema }, "/Plugin");
+validator.addSchema({ id: "./workflow-schema.json", ...workflowSchema }, "/Workflow");
+validator.addSchema({ id: "./plugin-schema.json", ...pluginSchema }, "/Plugin");
+validator.addSchema({ id: "./definitions.json", ...definitionSchema }, "/Definitions");
 
 const validate = (
   jsonData: object,
