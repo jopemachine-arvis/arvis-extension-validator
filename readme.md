@@ -19,6 +19,30 @@ All schema files could be developed in the `schema` folder.
 
 The files in the project root path are there to be imported from online directly.
 
+`non-strict` files allow `additionalProperties`.
+
+library's validator use `non-strict` file.
+
+Recommend to use normal `strict` file when developing extension.
+
+## How to add schema
+
+Just add to below line to `arvis-workflow.json`
+
+```json
+{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json"
+}
+```
+
+In case of `plugin`,
+
+```json
+{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/plugin-schema.json"
+}
+```
+
 ## Cli Usage
 
 ```
