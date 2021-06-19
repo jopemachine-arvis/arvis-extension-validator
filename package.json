@@ -17,6 +17,7 @@
 	},
 	"scripts": {
 		"test": "ava",
+		"schema-build": "node schema-build",
 		"build": "cp external/meow/index.d.ts node_modules/meow/index.d.ts && tsc"
 	},
 	"files": [

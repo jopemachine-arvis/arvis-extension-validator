@@ -2,8 +2,8 @@
     "definitions": {
         "title": {
             "type": "string",
-            "description": "[keyword, scriptFilter] Description of the command to display in the search window.",
-            "markdownDescription": "[keyword, scriptFilter] Description of the command to display in the search window."
+            "description": "[keyword, scriptFilter] Description of the command to display in the search window. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
+            "markdownDescription": "[keyword, scriptFilter] Description of the command to display in the search window. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
         },
         "subtitle": {
             "type": "string",
@@ -12,62 +12,62 @@
         },
         "withspace": {
             "type": "boolean",
-            "description": "[scriptFilter] Indicates if space is required after the command to execute it",
-            "markdownDescription": "[scriptFilter] Indicates if space is required after the command to execute it"
+            "description": "[scriptFilter] Indicates if space is required after the command to execute it. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter",
+            "markdownDescription": "[scriptFilter] Indicates if space is required after the command to execute it. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter"
         },
         "runningSubtext": {
             "type": "string",
-            "description": "[scriptFilter] Statement to display while scriptFilter is running.",
-            "markdownDescription": "[scriptFilter] Statement to display while scriptFilter is running."
+            "description": "[scriptFilter] Statement to display while scriptFilter is running. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter",
+            "markdownDescription": "[scriptFilter] Statement to display while scriptFilter is running. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter"
         },
         "scriptFilter": {
             "type": [
                 "string",
                 "object"
             ],
-            "description": "[scriptFilter] Scriptfilter to execute",
-            "markdownDescription": "[scriptFilter] Scriptfilter to execute"
+            "description": "[scriptFilter] Scriptfilter to execute. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter",
+            "markdownDescription": "[scriptFilter] Scriptfilter to execute. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter"
         },
         "script": {
             "type": [
                 "string",
                 "object"
             ],
-            "description": "[script] Script to execute",
-            "markdownDescription": "[script] Script to execute"
+            "description": "[script] Script to execute. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#script",
+            "markdownDescription": "[script] Script to execute. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#script"
         },
         "clipboardText": {
             "type": "string",
-            "description": "[clipboard] Text to copy to clipboard",
-            "markdownDescription": "[clipboard] Text to copy to clipboard"
+            "description": "[clipboard] Text to copy to clipboard. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#clipboard",
+            "markdownDescription": "[clipboard] Text to copy to clipboard. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#clipboard"
         },
         "notificationText": {
             "type": "string",
-            "description": "[notification] Text to show",
-            "markdownDescription": "[notification] Text to show"
+            "description": "[notification] Text to show. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#notification",
+            "markdownDescription": "[notification] Text to show. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#notification"
         },
         "if": {
             "type": "object",
-            "description": "[cond] Divides the flow of execution by conditions",
-            "markdownDescription": "[cond] Divides the flow of execution by conditions"
+            "description": "[cond] Divides the flow of execution by conditions. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "markdownDescription": "[cond] Divides the flow of execution by conditions. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond"
         },
         "cond": {
             "type": "string",
-            "description": "[cond] Conditions",
-            "markdownDescription": "[cond] Conditions"
+            "description": "[cond] Conditions. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "markdownDescription": "[cond] Conditions. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond"
         },
         "then": {
             "type": "array",
-            "description": "[cond] If 'cond' is true execute these actions",
-            "markdownDescription": "[cond] If 'cond' is true execute these actions",
+            "description": "[cond] If 'cond' is true execute these actions. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "markdownDescription": "[cond] If 'cond' is true execute these actions. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
             "items": {
                 "$ref": "#/definitions/command"
             }
         },
         "else": {
             "type": "array",
-            "description": "[cond] If 'cond' is false execute these actions",
-            "markdownDescription": "[cond] If 'cond' is false execute these actions",
+            "description": "[cond] If 'cond' is false execute these actions. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "markdownDescription": "[cond] If 'cond' is false execute these actions. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
             "items": {
                 "$ref": "#/definitions/command"
             }
@@ -77,8 +77,8 @@
                 "string",
                 "object"
             ],
-            "description": "[arg] Select argument",
-            "markdownDescription": "[arg] Select argument",
+            "description": "[arg] Select argument. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#args",
+            "markdownDescription": "[arg] Select argument. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#args",
             "defaultSnippets": [
                 {
                     "label": "[arg] Select argument",
@@ -88,8 +88,8 @@
         },
         "target": {
             "type": "string",
-            "description": "[open] target to open (url, file path)",
-            "markdownDescription": "[open] target to open (url, file path)"
+            "description": "[open] target to open (url, file path). Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#open",
+            "markdownDescription": "[open] target to open (url, file path). Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#open"
         },
         "argType": {
             "type": "string",
@@ -98,28 +98,28 @@
                 "optional",
                 "required"
             ],
-            "description": "[keyword, scriptFilter] Defines whether an argument is required for action execution",
-            "markdownDescription": "[keyword, scriptFilter] Defines whether an argument is required for action execution"
+            "description": "[keyword, scriptFilter] Defines whether an argument is required for action execution. Ref: https://github.com/jopemachine/arvis/blob/master/documents/keyword-description.md#argtype",
+            "markdownDescription": "[keyword, scriptFilter] Defines whether an argument is required for action execution. Ref: https://github.com/jopemachine/arvis/blob/master/documents/keyword-description.md#argtype"
         },
         "commandStr": {
             "type": "string",
-            "description": "[keyword, scriptFilter] Command to search for and execute commands.",
-            "markdownDescription": "[keyword, scriptFilter] Command to search for and execute commands."
+            "description": "[keyword, scriptFilter] Command to search for and execute commands. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
+            "markdownDescription": "[keyword, scriptFilter] Command to search for and execute commands. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
         },
         "newInput": {
             "type": "string",
-            "description": "[resetInput] Renew Arvis searchbar's value with this string",
-            "markdownDescription": "[resetInput] Renew Arvis searchbar's value with this string"
+            "description": "[resetInput] Renew Arvis searchbar's value with this string. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#resetInput",
+            "markdownDescription": "[resetInput] Renew Arvis searchbar's value with this string. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#resetInput"
         },
         "hotkey": {
             "type": "string",
-            "description": "[hotkey] Hotkey to execute Action",
-            "markdownDescription": "[hotkey] Hotkey to execute Action"
+            "description": "[hotkey] Hotkey to execute Action. Check available hotkeys on https://github.com/jopemachine/arvis/blob/master/documents/hotkey-description.md",
+            "markdownDescription": "[hotkey] Hotkey to execute Action. Check available hotkeys on https://github.com/jopemachine/arvis/blob/master/documents/hotkey-description.md"
         },
         "type": {
             "type": "string",
-            "description": "Action's type",
-            "markdownDescription": "Action's type",
+            "description": "[common] Action's type. Check each usage on https://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
+            "markdownDescription": "[common] Action's type. Check each usage on https://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
             "enum": [
                 "args",
                 "clipboard",
@@ -147,14 +147,16 @@
                 "shift",
                 "fn"
             ],
-            "description": "Specific modifier key must be pressed to run",
-            "markdownDescription": "Specific modifier key must be pressed to run"
+            "description": "[common] Specific modifier key which must be pressed to run",
+            "markdownDescription": "[common] Specific modifier key which must be pressed to run"
         },
         "actions": {
             "type": "array",
             "items": {
                 "$ref": "#/definitions/command"
-            }
+            },
+            "description": "[common] Action when executed by user. Check each action on https://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
+            "markdownDescription": "[common] Action when executed by user. Check each action on https://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
         },
         "command": {
             "type": "object",
@@ -494,7 +496,9 @@
                         "text": "{query}"
                     }
                 }
-            ]
+            ],
+            "description": "[common] Array of commands that users can use",
+            "markdownDescription": "[common] Array of commands that users can use"
         }
     }
 }

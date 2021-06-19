@@ -13,8 +13,8 @@
         },
         "creator": {
             "type": "string",
-            "description": "Plugin's creator name",
-            "markdownDescription": "Plugin's creator name",
+            "description": "Plugin's creator name. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#creator",
+            "markdownDescription": "Plugin's creator name. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#creator",
             "pattern": "^[a-zA-Z]+[a-zA-Z0-9_\\- ]*$",
             "defaultSnippets": [
                 {
@@ -25,8 +25,8 @@
         },
         "defaultIcon": {
             "type": "string",
-            "description": "Plugin's default icon",
-            "markdownDescription": "Plugin's default icon",
+            "description": "Plugin's default icon. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#defaultIcon",
+            "markdownDescription": "Plugin's default icon. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#defaultIcon",
             "defaultSnippets": [
                 {
                     "label": "Plugin's default icon",
@@ -36,8 +36,8 @@
         },
         "description": {
             "type": "string",
-            "description": "Plugin's description",
-            "markdownDescription": "Plugin's description",
+            "description": "Plugin's description. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#description",
+            "markdownDescription": "Plugin's description. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#description",
             "defaultSnippets": [
                 {
                     "label": "Plugin's description",
@@ -47,8 +47,8 @@
         },
         "name": {
             "type": "string",
-            "description": "Plugin's name",
-            "markdownDescription": "Plugin's name",
+            "description": "Plugin's name. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#name",
+            "markdownDescription": "Plugin's name. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#name",
             "pattern": "^[a-zA-Z]+[a-zA-Z0-9_\\- ]*$",
             "defaultSnippets": [
                 {
@@ -59,19 +59,19 @@
         },
         "readme": {
             "type": "string",
-            "description": "Plugin's readme url",
-            "markdownDescription": "Plugin's readme url",
+            "description": "Plugin's README url. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#readme",
+            "markdownDescription": "Plugin's README url. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#readme",
             "defaultSnippets": [
                 {
-                    "label": "Plugin's readme url",
+                    "label": "Plugin's README url",
                     "body": ""
                 }
             ]
         },
         "category": {
             "type": "string",
-            "description": "Plugin's category",
-            "markdownDescription": "Plugin's category",
+            "description": "Plugin's category. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#category",
+            "markdownDescription": "Plugin's category. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#category",
             "defaultSnippets": [
                 {
                     "label": "Plugin's category",
@@ -81,8 +81,8 @@
         },
         "version": {
             "type": "string",
-            "description": "Plugin's version",
-            "markdownDescription": "Plugin's version",
+            "description": "Plugin's version. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#version",
+            "markdownDescription": "Plugin's version. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#version",
             "defaultSnippets": [
                 {
                     "label": "Plugin's version",
@@ -92,8 +92,8 @@
         },
         "latest": {
             "type": "string",
-            "description": "Plugin's latest version",
-            "markdownDescription": "Plugin's latest version. Mark this value from your script when update is needed",
+            "description": "Plugin's latest version. Mark this value from your script when update is needed. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#latest",
+            "markdownDescription": "Plugin's latest version. Mark this value from your script when update is needed. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#latest",
             "defaultSnippets": [
                 {
                     "label": "Plugin's latest version",
@@ -103,8 +103,8 @@
         },
         "webAddress": {
             "type": "string",
-            "description": "Plugin's webaddress url",
-            "markdownDescription": "Plugin's webaddress url",
+            "description": "Plugin's webaddress url. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#webAddress",
+            "markdownDescription": "Plugin's webaddress url. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#webAddress",
             "defaultSnippets": [
                 {
                     "label": "Plugin's webaddress url",
@@ -114,8 +114,8 @@
         },
         "enabled": {
             "type": "boolean",
-            "description": "'Enabled' Status",
-            "markdownDescription": "'Enabled' Status",
+            "description": "'Enabled' Status. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#enabled",
+            "markdownDescription": "'Enabled' Status. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#enabled",
             "defaultSnippets": [
                 {
                     "label": "'Enabled' Status",
@@ -125,8 +125,8 @@
         },
         "main": {
             "type": "string",
-            "description": "Entry file to import",
-            "markdownDescription": "Entry file to import",
+            "description": "Entry file to import. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#main",
+            "markdownDescription": "Entry file to import. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#main",
             "defaultSnippets": [
                 {
                     "label": "Entry file to import",
@@ -138,17 +138,19 @@
             "type": "array",
             "items": {
                 "$ref": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/schema/definitions.json#/definitions/command"
-            }
+            },
+            "description": "Plugin's actions. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#actions",
+            "markdownDescription": "Plugin's actions. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#actions"
         },
         "platform": {
             "type": "array",
-            "description": "Target platforms",
-            "markdownDescription": "Target platforms"
+            "description": "Target platforms. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#platform",
+            "markdownDescription": "Target platforms. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#platform"
         },
         "variables": {
             "type": "object",
-            "description": "Set the variables to use in the extension",
-            "markdownDescription": "Set the variables to use in the extension"
+            "description": "Set the variables to use in the extension. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#variables",
+            "markdownDescription": "Set the variables to use in the extension. Ref: https://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#variables"
         }
     }
 }

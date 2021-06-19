@@ -13,9 +13,9 @@
         },
         "creator": {
             "type": "string",
-            "description": "Workflow's creator name",
+            "description": "Workflow's creator name. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#creator",
             "pattern": "^[a-zA-Z]+[a-zA-Z0-9_\\- ]*$",
-            "markdownDescription": "Workflow's creator name",
+            "markdownDescription": "Workflow's creator name. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#creator",
             "defaultSnippets": [
                 {
                     "label": "Workflow's creator name",
@@ -25,8 +25,8 @@
         },
         "defaultIcon": {
             "type": "string",
-            "description": "Workflow's default icon",
-            "markdownDescription": "Workflow's default icon",
+            "description": "Workflow's default icon. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#defaultIcon",
+            "markdownDescription": "Workflow's default icon. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#defaultIcon",
             "defaultSnippets": [
                 {
                     "label": "Workflow's default icon",
@@ -36,8 +36,8 @@
         },
         "description": {
             "type": "string",
-            "description": "Workflow's description",
-            "markdownDescription": "Workflow's description",
+            "description": "Workflow's description. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#description",
+            "markdownDescription": "Workflow's description. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#description",
             "defaultSnippets": [
                 {
                     "label": "Workflow's description",
@@ -47,9 +47,9 @@
         },
         "name": {
             "type": "string",
-            "description": "Workflow's name",
+            "description": "Workflow's name. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#name",
             "pattern": "^[a-zA-Z]+[a-zA-Z0-9_\\- ]*$",
-            "markdownDescription": "Workflow's name",
+            "markdownDescription": "Workflow's name. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#name",
             "defaultSnippets": [
                 {
                     "label": "Workflow's name",
@@ -59,19 +59,19 @@
         },
         "readme": {
             "type": "string",
-            "description": "Workflow's readme url",
-            "markdownDescription": "Workflow's readme url",
+            "description": "Workflow's README url. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#readme",
+            "markdownDescription": "Workflow's README url. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#readme",
             "defaultSnippets": [
                 {
-                    "label": "Workflow's readme url",
+                    "label": "Workflow's README url",
                     "body": ""
                 }
             ]
         },
         "category": {
             "type": "string",
-            "description": "Workflow's category",
-            "markdownDescription": "Workflow's category",
+            "description": "Workflow's category. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#category",
+            "markdownDescription": "Workflow's category. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#category",
             "defaultSnippets": [
                 {
                     "label": "Workflow's category",
@@ -81,8 +81,8 @@
         },
         "version": {
             "type": "string",
-            "description": "Workflow's version",
-            "markdownDescription": "Workflow's version",
+            "description": "Workflow's version. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#version",
+            "markdownDescription": "Workflow's version. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#version",
             "defaultSnippets": [
                 {
                     "label": "Workflow's version",
@@ -92,8 +92,8 @@
         },
         "latest": {
             "type": "string",
-            "description": "Workflow's latest version",
-            "markdownDescription": "Workflow's latest version. Mark this value from your script when update is needed",
+            "description": "Workflow's latest version. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#latest",
+            "markdownDescription": "Workflow's latest version. Mark this value from your script when update is needed. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#latest",
             "defaultSnippets": [
                 {
                     "label": "Workflow's latest version",
@@ -103,8 +103,8 @@
         },
         "webAddress": {
             "type": "string",
-            "description": "Workflow's webaddress url",
-            "markdownDescription": "Workflow's webaddress url",
+            "description": "Workflow's webaddress url. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#webAddress",
+            "markdownDescription": "Workflow's webaddress url. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#webAddress",
             "defaultSnippets": [
                 {
                     "label": "Workflow's webaddress url",
@@ -114,8 +114,8 @@
         },
         "enabled": {
             "type": "boolean",
-            "description": "'Enabled' Status",
-            "markdownDescription": "'Enabled' Status",
+            "description": "'Enabled' Status. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#enabled",
+            "markdownDescription": "'Enabled' Status. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#enabled",
             "defaultSnippets": [
                 {
                     "label": "'Enabled' Status",
@@ -125,18 +125,18 @@
         },
         "platform": {
             "type": "array",
-            "description": "Target platforms",
-            "markdownDescription": "Target platforms"
+            "description": "Target platforms. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#platform",
+            "markdownDescription": "Target platforms. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#platform"
         },
         "variables": {
             "type": "object",
-            "description": "Set the variables to use in the extension",
-            "markdownDescription": "Set the variables to use in the extension"
+            "description": "Set the variables to use in the extension. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#variables",
+            "markdownDescription": "Set the variables to use in the extension. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#variables"
         },
         "commands": {
             "type": "array",
-            "description": "Workflow's commands",
-            "markdownDescription": "Workflow's commands",
+            "description": "Workflow's commands. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#commands",
+            "markdownDescription": "Workflow's commands. Ref: https://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#commands",
             "defaultSnippets": [
                 {
                     "label": "Script filter action template",
