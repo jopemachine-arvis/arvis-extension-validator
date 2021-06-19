@@ -7,8 +7,8 @@
         },
         "subtitle": {
             "type": "string",
-            "description": "[keyword, scriptFilter] A additional description of the command to display in the search window.",
-            "markdownDescription": "[keyword, scriptFilter] A additional description of the command to display in the search window."
+            "description": "[keyword, scriptFilter] A additional description of the command to display in the search window. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
+            "markdownDescription": "[keyword, scriptFilter] A additional description of the command to display in the search window. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
         },
         "withspace": {
             "type": "boolean",
@@ -147,8 +147,8 @@
                 "shift",
                 "fn"
             ],
-            "description": "[common] Specific modifier key which must be pressed to run",
-            "markdownDescription": "[common] Specific modifier key which must be pressed to run"
+            "description": "[common] Specific modifier key which must be pressed to run. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#modifiers",
+            "markdownDescription": "[common] Specific modifier key which must be pressed to run. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md#modifiers"
         },
         "actions": {
             "type": "array",
@@ -497,8 +497,8 @@
                     }
                 }
             ],
-            "description": "[common] Array of commands that users can use",
-            "markdownDescription": "[common] Array of commands that users can use"
+            "description": "[common] Array of commands that users can use. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
+            "markdownDescription": "[common] Array of commands that users can use. Ref: https://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
         }
     }
 }
