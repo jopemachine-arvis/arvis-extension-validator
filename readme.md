@@ -1,4 +1,5 @@
 # arvis-extension-validator
+[![CodeFactor](https://www.codefactor.io/repository/github/jopemachine/arvis-extension-validator/badge)](https://www.codefactor.io/repository/github/jopemachine/arvis-extension-validator)
 [![NPM download total](https://img.shields.io/npm/dt/arvis-extension-validator)](http://badge.fury.io/js/arvis-extension-validator)
 [![BuildStatus](https://api.travis-ci.com/jopemachine/arvis-extension-validator.svg)](https://www.npmjs.com/package/arvis-extension-validator)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
