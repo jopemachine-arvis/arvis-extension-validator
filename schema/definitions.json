@@ -113,13 +113,13 @@
         },
         "hotkey": {
             "type": "string",
-            "description": "[hotkey] Hotkey to execute Action. Check available hotkeys on https://github.com/jopemachine/arvis/blob/master/documents/hotkey-description.md",
-            "markdownDescription": "[hotkey] Hotkey to execute Action. Check available hotkeys on https://github.com/jopemachine/arvis/blob/master/documents/hotkey-description.md"
+            "description": "[hotkey] Hotkey to execute Action. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/hotkey-description.md",
+            "markdownDescription": "[hotkey] Hotkey to execute Action. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/hotkey-description.md"
         },
         "type": {
             "type": "string",
-            "description": "[common] Action's type. Check each usage on https://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
-            "markdownDescription": "[common] Action's type. Check each usage on https://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
+            "description": "[common] Action's type. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
+            "markdownDescription": "[common] Action's type. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
             "enum": [
                 "args",
                 "clipboard",
@@ -155,8 +155,8 @@
             "items": {
                 "$ref": "#/definitions/command"
             },
-            "description": "[common] Action when executed by user. Check each action on https://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
-            "markdownDescription": "[common] Action when executed by user. Check each action on https://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
+            "description": "[common] Action when executed by user. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
+            "markdownDescription": "[common] Action when executed by user. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
         },
         "command": {
             "type": "object",
@@ -247,6 +247,9 @@
                         },
                         "title": {
                             "$ref": "#/definitions/title"
+                        },
+                        "subtitle": {
+                            "$ref": "#/definitions/subtitle"
                         },
                         "runningSubtext": {
                             "$ref": "#/definitions/runningSubtext"
