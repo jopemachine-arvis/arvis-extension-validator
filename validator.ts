@@ -1,4 +1,5 @@
 import { Validator } from "jsonschema";
+import chalk from 'chalk';
 const workflowSchema = require("../schema/workflow.json");
 const pluginSchema = require("../schema/plugin.json");
 const definitionSchema = require("../schema/definitions.json");
@@ -16,7 +17,7 @@ const validate = (
   const result = validator.validate(jsonData, schema);
   const errorMsg = result.errors.map(
     error =>
-      `'${error.instance}' ${error.message}\nError path: '${error.property}'`
+      chalk.bgRedBright.whiteBright(error.toString())
   ).join('\n\n');
 
   return {

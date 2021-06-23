@@ -139,22 +139,20 @@
             "markdownDescription": "Workflow's commands. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#commands",
             "defaultSnippets": [
                 {
-                    "label": "Script filter action template",
+                    "label": "ScriptFilter template",
                     "body": [
                         {
                             "type": "scriptFilter",
                             "command": "",
-                            "text": "",
-                            "title": "",
-                            "subtitle": "",
-                            "runningSubtext": "",
+                            "runningSubtext": "Hold on a sec until script work is done...",
+                            "argType": "optional",
                             "withspace": true,
                             "actions": []
                         }
                     ]
                 },
                 {
-                    "label": "Keyword action template",
+                    "label": "Keyword template",
                     "body": [
                         {
                             "type": "keyword",
@@ -162,12 +160,13 @@
                             "text": "",
                             "title": "",
                             "subtitle": "",
+                            "argType": "no",
                             "actions": []
                         }
                     ]
                 },
                 {
-                    "label": "Hotkey action template",
+                    "label": "Hotkey template",
                     "body": [
                         {
                             "type": "hotkey",

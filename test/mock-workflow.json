@@ -62,15 +62,17 @@
             "argType": "optional",
             "actions": [
                 {
+                    "modifiers": "normal",
                     "type": "scriptFilter",
-                    "arg": "{query}",
+                    "title": "",
                     "scriptFilter": "node scriptFilter.js {query}",
                     "runningSubtext": "Searching...",
                     "withspace": true,
                     "actions": [
                         {
+                            "modifiers": "normal",
                             "type": "scriptFilter",
-                            "arg": "{query}",
+                            "title": "",
                             "scriptFilter": "node scriptFilter.js {query}",
                             "runningSubtext": "Searching...",
                             "withspace": true,
@@ -128,15 +130,11 @@
             "type": "keyword",
             "command": "t5",
             "title": "Test 5 - Unavailable",
-            "subtitle": "",
-            "script": "",
             "actions": [
                 {
                     "type": "keyword",
                     "command": "",
                     "title": "",
-                    "subtitle": "",
-                    "script": "",
                     "actions": []
                 }
             ]
@@ -155,7 +153,6 @@
                     "command": "",
                     "title": "Title test",
                     "subtitle": "",
-                    "script": "",
                     "actions": [
                         {
                             "type": "notification",
@@ -175,7 +172,6 @@
                     "type": "keyword",
                     "title": "Test 7 - hotkey + keyword (keyword waiting 2)",
                     "subtitle": "",
-                    "script": "",
                     "actions": [
                         {
                             "type": "notification",

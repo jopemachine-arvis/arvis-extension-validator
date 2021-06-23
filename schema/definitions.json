@@ -2,8 +2,8 @@
     "definitions": {
         "title": {
             "type": "string",
-            "description": "[keyword, scriptFilter] Description of the command to display in the search window. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
-            "markdownDescription": "[keyword, scriptFilter] Description of the command to display in the search window. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
+            "description": "[keyword, scriptFilter] Description of the command to display in the search window. Define it carefully so that users know what this command is. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
+            "markdownDescription": "[keyword, scriptFilter] Description of the command to display in the search window. Define it carefully so that users know what this command is. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
         },
         "subtitle": {
             "type": "string",
@@ -12,13 +12,13 @@
         },
         "withspace": {
             "type": "boolean",
-            "description": "[scriptFilter] Indicates if space is required after the command to execute it. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter",
-            "markdownDescription": "[scriptFilter] Indicates if space is required after the command to execute it. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter"
+            "description": "[scriptFilter] Indicates whether spaces are required to execute this command. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter",
+            "markdownDescription": "[scriptFilter] Indicates whether spaces are required to execute this command. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter"
         },
         "runningSubtext": {
             "type": "string",
-            "description": "[scriptFilter] Statement to display while scriptFilter is running. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter",
-            "markdownDescription": "[scriptFilter] Statement to display while scriptFilter is running. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter"
+            "description": "[scriptFilter] Sentence to display while scriptFilter is running. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter",
+            "markdownDescription": "[scriptFilter] Sentence to display while scriptFilter is running. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter"
         },
         "scriptFilter": {
             "type": [
@@ -43,31 +43,31 @@
         },
         "notificationText": {
             "type": "string",
-            "description": "[notification] Text to show. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#notification",
-            "markdownDescription": "[notification] Text to show. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#notification"
+            "description": "[notification] Text to show in notification. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#notification",
+            "markdownDescription": "[notification] Text to show in notification. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#notification"
         },
         "if": {
             "type": "object",
-            "description": "[cond] Divides the flow of execution by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
-            "markdownDescription": "[cond] Divides the flow of execution by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond"
+            "description": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "markdownDescription": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond"
         },
         "cond": {
             "type": "string",
-            "description": "[cond] Conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
-            "markdownDescription": "[cond] Conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond"
+            "description": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "markdownDescription": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond"
         },
         "then": {
             "type": "array",
-            "description": "[cond] If 'cond' is true execute these actions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
-            "markdownDescription": "[cond] If 'cond' is true execute these actions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "description": "[cond] If 'cond' is 'true' execute these actions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "markdownDescription": "[cond] If 'cond' is 'true' execute these actions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
             "items": {
                 "$ref": "#/definitions/command"
             }
         },
         "else": {
             "type": "array",
-            "description": "[cond] If 'cond' is false execute these actions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
-            "markdownDescription": "[cond] If 'cond' is false execute these actions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "description": "[cond] If 'cond' is 'false' execute these actions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "markdownDescription": "[cond] If 'cond' is 'false' execute these actions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
             "items": {
                 "$ref": "#/definitions/command"
             }
@@ -77,8 +77,8 @@
                 "string",
                 "object"
             ],
-            "description": "[arg] Select argument. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#args",
-            "markdownDescription": "[arg] Select argument. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#args",
+            "description": "[arg] Select argument to pass in {query}. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#args",
+            "markdownDescription": "[arg] Select argument to pass in {query} . \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#args",
             "defaultSnippets": [
                 {
                     "label": "[arg] Select argument",
@@ -88,8 +88,8 @@
         },
         "target": {
             "type": "string",
-            "description": "[open] target to open (url, file path). \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#open",
-            "markdownDescription": "[open] target to open (url, file path). \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#open"
+            "description": "[open] Target to open (url, file path). \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#open",
+            "markdownDescription": "[open] Target to open (url, file path). \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#open"
         },
         "argType": {
             "type": "string",
@@ -147,16 +147,16 @@
                 "shift",
                 "fn"
             ],
-            "description": "[common] Specific modifier key which must be pressed to run. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#modifiers",
-            "markdownDescription": "[common] Specific modifier key which must be pressed to run. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#modifiers"
+            "description": "[common] Modifier key which must be pressed to run this action. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#modifiers",
+            "markdownDescription": "[common] Modifier key which must be pressed to run this action. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#modifiers"
         },
         "actions": {
             "type": "array",
             "items": {
                 "$ref": "#/definitions/command"
             },
-            "description": "[common] Action when executed by user. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
-            "markdownDescription": "[common] Action when executed by user. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
+            "description": "[common] Action to trigger when executed by user. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
+            "markdownDescription": "[common] Action to trigger when executed by user. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
         },
         "command": {
             "type": "object",
@@ -166,6 +166,7 @@
                     "required": [
                         "target"
                     ],
+                    "additionalProperties": false,
                     "properties": {
                         "type": {
                             "type": "string",
@@ -189,6 +190,7 @@
                     "required": [
                         "text"
                     ],
+                    "additionalProperties": false,
                     "properties": {
                         "type": {
                             "type": "string",
@@ -212,6 +214,7 @@
                     "required": [
                         "script"
                     ],
+                    "additionalProperties": false,
                     "properties": {
                         "type": {
                             "type": "string",
@@ -233,8 +236,11 @@
                 {
                     "type": "object",
                     "required": [
-                        "scriptFilter"
+                        "scriptFilter",
+                        "title",
+                        "actions"
                     ],
+                    "additionalProperties": false,
                     "properties": {
                         "type": {
                             "type": "string",
@@ -276,6 +282,7 @@
                     "required": [
                         "title"
                     ],
+                    "additionalProperties": false,
                     "properties": {
                         "type": {
                             "type": "string",
@@ -302,6 +309,7 @@
                     "required": [
                         "if"
                     ],
+                    "additionalProperties": false,
                     "properties": {
                         "type": {
                             "type": "string",
@@ -320,8 +328,10 @@
                 {
                     "type": "object",
                     "required": [
-                        "arg"
+                        "arg",
+                        "actions"
                     ],
+                    "additionalProperties": false,
                     "properties": {
                         "type": {
                             "type": "string",
@@ -345,6 +355,7 @@
                     "required": [
                         "actions"
                     ],
+                    "additionalProperties": false,
                     "properties": {
                         "type": {
                             "type": "string",
@@ -375,8 +386,10 @@
                 {
                     "type": "object",
                     "required": [
-                        "hotkey"
+                        "hotkey",
+                        "actions"
                     ],
+                    "additionalProperties": false,
                     "properties": {
                         "type": {
                             "type": "string",
@@ -397,6 +410,7 @@
                     "required": [
                         "newInput"
                     ],
+                    "additionalProperties": false,
                     "properties": {
                         "type": {
                             "type": "string",
@@ -426,7 +440,7 @@
                         "command": "",
                         "title": "",
                         "subtitle": "",
-                        "script": "",
+                        "argType": "no",
                         "actions": []
                     }
                 },
@@ -435,10 +449,9 @@
                     "body": {
                         "type": "scriptFilter",
                         "command": "",
-                        "title": "",
-                        "subtitle": "",
                         "scriptFilter": "",
-                        "runningSubtext": "",
+                        "runningSubtext": "Hold on a sec until script work is done...",
+                        "argType": "optional",
                         "withspace": true,
                         "actions": []
                     }
@@ -449,7 +462,7 @@
                         "type": "cond",
                         "modifiers": "normal",
                         "if": {
-                            "cond": "",
+                            "cond": "{query}",
                             "actions": {
                                 "then": [],
                                 "else": []
@@ -462,7 +475,7 @@
                     "body": {
                         "type": "args",
                         "modifiers": "normal",
-                        "arg": "{query}",
+                        "arg": "{var:}",
                         "actions": []
                     }
                 },
