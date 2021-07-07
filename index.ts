@@ -1,2 +1,2 @@
 import { validate } from './validator';
-export { validate }
+export { validate };
