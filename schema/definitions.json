@@ -512,6 +512,14 @@
                         "modifiers": "normal",
                         "text": "{query}"
                     }
+                },
+                {
+                    "label": "Reset Input",
+                    "body": {
+                        "type": "resetInput",
+                        "modifiers": "normal",
+                        "newInput": "{query}"
+                    }
                 }
             ],
             "description": "[common] Array of commands that users can use. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
