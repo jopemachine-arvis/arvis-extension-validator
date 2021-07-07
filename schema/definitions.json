@@ -418,6 +418,9 @@
                                 "resetInput"
                             ]
                         },
+                        "modifiers": {
+                            "$ref": "#/definitions/modifiers"
+                        },
                         "newInput": {
                             "$ref": "#/definitions/newInput"
                         }
