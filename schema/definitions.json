@@ -54,7 +54,15 @@
         "cond": {
             "type": "string",
             "description": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
-            "markdownDescription": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond"
+            "markdownDescription": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "properties": {
+                "then": {
+                    "$ref": "#/definitions/then"
+                },
+                "else": {
+                    "$ref": "#/definitions/else"
+                }
+            }
         },
         "then": {
             "type": "array",
