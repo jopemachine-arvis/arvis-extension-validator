@@ -67,16 +67,19 @@
             "additionalProperties": false,
             "defaultSnippets": [
                 {
-                    "cond": "{query}",
-                    "actions": {
-                        "then": [],
-                        "else": []
+                    "label": "If",
+                    "body": {
+                        "cond": "{query}",
+                        "actions": {
+                            "then": [],
+                            "else": []
+                        }
                     }
                 }
             ],
             "properties": {
                 "cond": {
-                    "type": "string"
+                    "$ref": "#/definitions/cond"
                 },
                 "actions": {
                     "$ref": "#/definitions/condActions"
