@@ -49,12 +49,13 @@
         "if": {
             "type": "object",
             "description": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
-            "markdownDescription": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond"
-        },
-        "cond": {
-            "type": "string",
-            "description": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
             "markdownDescription": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "defaultSnippets": [
+                {
+                    "then": [],
+                    "else": []
+                }
+            ],
             "properties": {
                 "then": {
                     "$ref": "#/definitions/then"
@@ -63,6 +64,11 @@
                     "$ref": "#/definitions/else"
                 }
             }
+        },
+        "cond": {
+            "type": "string",
+            "description": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "markdownDescription": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond"
         },
         "then": {
             "type": "array",
