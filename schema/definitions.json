@@ -46,22 +46,40 @@
             "description": "[notification] Text to show in notification. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#notification",
             "markdownDescription": "[notification] Text to show in notification. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#notification"
         },
-        "if": {
+        "condActions": {
             "type": "object",
+            "additionalProperties": false,
             "description": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
             "markdownDescription": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
-            "defaultSnippets": [
-                {
-                    "then": [],
-                    "else": []
-                }
-            ],
             "properties": {
                 "then": {
                     "$ref": "#/definitions/then"
                 },
                 "else": {
                     "$ref": "#/definitions/else"
+                }
+            }
+        },
+        "if": {
+            "type": "object",
+            "description": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "markdownDescription": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "additionalProperties": false,
+            "defaultSnippets": [
+                {
+                    "cond": "{query}",
+                    "actions": {
+                        "then": [],
+                        "else": []
+                    }
+                }
+            ],
+            "properties": {
+                "cond": {
+                    "type": "string"
+                },
+                "actions": {
+                    "$ref": "#/definitions/condActions"
                 }
             }
         },
