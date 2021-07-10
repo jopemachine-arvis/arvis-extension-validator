@@ -59,11 +59,11 @@
         },
         "readme": {
             "type": "string",
-            "description": "Plugin's README url. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#readme",
-            "markdownDescription": "Plugin's README url. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#readme",
+            "description": "Plugin's README text. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#readme",
+            "markdownDescription": "Plugin's README text. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/plugin-config-format.md#readme",
             "defaultSnippets": [
                 {
-                    "label": "Plugin's README url",
+                    "label": "Plugin's README text",
                     "body": ""
                 }
             ]
@@ -130,7 +130,7 @@
             "defaultSnippets": [
                 {
                     "label": "Entry file to import",
-                    "body": true
+                    "body": "index.js"
                 }
             ]
         },

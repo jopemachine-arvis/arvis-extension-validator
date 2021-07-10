@@ -59,11 +59,11 @@
         },
         "readme": {
             "type": "string",
-            "description": "Workflow's README url. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#readme",
-            "markdownDescription": "Workflow's README url. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#readme",
+            "description": "Workflow's README text. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#readme",
+            "markdownDescription": "Workflow's README text. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#readme",
             "defaultSnippets": [
                 {
-                    "label": "Workflow's README url",
+                    "label": "Workflow's README text",
                     "body": ""
                 }
             ]
@@ -103,11 +103,11 @@
         },
         "webAddress": {
             "type": "string",
-            "description": "Workflow's webaddress url. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#webAddress",
-            "markdownDescription": "Workflow's webaddress url. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#webAddress",
+            "description": "Workflow's webaddress text. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#webAddress",
+            "markdownDescription": "Workflow's webaddress text. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/workflow-config-format.md#webAddress",
             "defaultSnippets": [
                 {
-                    "label": "Workflow's webaddress url",
+                    "label": "Workflow's webaddress text",
                     "body": ""
                 }
             ]
