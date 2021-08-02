@@ -498,7 +498,7 @@
                 {
                     "type": "object",
                     "required": [
-                        "key"
+                        "target"
                     ],
                     "additionalProperties": false,
                     "properties": {
