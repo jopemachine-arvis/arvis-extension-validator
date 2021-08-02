@@ -10,6 +10,21 @@
             "description": "[keyword, scriptFilter] A additional description of the command to display in the search window. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
             "markdownDescription": "[keyword, scriptFilter] A additional description of the command to display in the search window. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
         },
+        "argType": {
+            "type": "string",
+            "enum": [
+                "no",
+                "optional",
+                "required"
+            ],
+            "description": "[keyword, scriptFilter] Defines whether an argument is required for action execution. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/keyword-description.md#argtype",
+            "markdownDescription": "[keyword, scriptFilter] Defines whether an argument is required for action execution. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/keyword-description.md#argtype"
+        },
+        "commandStr": {
+            "type": "string",
+            "description": "[keyword, scriptFilter] Command to search for and execute commands. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
+            "markdownDescription": "[keyword, scriptFilter] Command to search for and execute commands. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
+        },
         "withspace": {
             "type": "boolean",
             "description": "[scriptFilter] Indicates whether spaces are required to execute this command. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter",
@@ -107,6 +122,39 @@
                 "$ref": "#/definitions/command"
             }
         },
+        "keyDispatchingTarget": {
+            "type": "object",
+            "description": "[keyDispatching] Key info for dispatching. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#keyDispatching",
+            "markdownDescription": "[keyDispatching] Key info for dispatching. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#keyDispatching",
+            "additionalProperties": false,
+            "defaultSnippets": [
+                {
+                    "label": "Dispatch Key",
+                    "body": {
+                        "key": "",
+                        "modifiers": []
+                    }
+                }
+            ],
+            "properties": {
+                "key": {
+                    "$ref": "#/definitions/key"
+                },
+                "modifiers": {
+                    "$ref": "#/definitions/keyDispatchingModifiers"
+                }
+            }
+        },
+        "key": {
+            "type": "string",
+            "description": "[keyDispatching] Key to be dispatched. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#keyDispatching",
+            "markdownDescription": "[keyDispatching] Key to be dispatched. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#keyDispatching"
+        },
+        "keyDispatchingModifiers": {
+            "type": "array",
+            "description": "[keyDispatching] Modifier keys to be dispatched. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#keyDispatching",
+            "markdownDescription": "[keyDispatching] Modifier keys to be dispatched. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#keyDispatching"
+        },
         "arg": {
             "type": [
                 "string",
@@ -125,21 +173,6 @@
             "type": "string",
             "description": "[open] Target to open (url, file path). \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#open",
             "markdownDescription": "[open] Target to open (url, file path). \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#open"
-        },
-        "argType": {
-            "type": "string",
-            "enum": [
-                "no",
-                "optional",
-                "required"
-            ],
-            "description": "[keyword, scriptFilter] Defines whether an argument is required for action execution. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/keyword-description.md#argtype",
-            "markdownDescription": "[keyword, scriptFilter] Defines whether an argument is required for action execution. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/keyword-description.md#argtype"
-        },
-        "commandStr": {
-            "type": "string",
-            "description": "[keyword, scriptFilter] Command to search for and execute commands. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
-            "markdownDescription": "[keyword, scriptFilter] Command to search for and execute commands. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
         },
         "newInput": {
             "type": "string",
@@ -165,7 +198,8 @@
                 "open",
                 "script",
                 "scriptFilter",
-                "resetInput"
+                "resetInput",
+                "keyDispatching"
             ]
         },
         "modifiers": {
@@ -460,6 +494,27 @@
                             "$ref": "#/definitions/newInput"
                         }
                     }
+                },
+                {
+                    "type": "object",
+                    "required": [
+                        "key"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "keyDispatching"
+                            ]
+                        },
+                        "target": {
+                            "$ref": "#/definitions/keyDispatchingTarget"
+                        },
+                        "modifiers": {
+                            "$ref": "#/definitions/modifiers"
+                        }
+                    }
                 }
             ],
             "defaultSnippets": [
@@ -557,6 +612,17 @@
                         "type": "resetInput",
                         "modifiers": "normal",
                         "newInput": "{query}"
+                    }
+                },
+                {
+                    "label": "Dispatch Key",
+                    "body": {
+                        "type": "keyDispatching",
+                        "modifiers": "normal",
+                        "target": {
+                            "key": "",
+                            "modifiers": []
+                        }
                     }
                 }
             ],

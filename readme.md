@@ -11,7 +11,7 @@
 ## Install
 
 ```
-$ npm install arvis-extension-validator
+$ npm install -g arvis-extension-validator
 ```
 
 ## Schema
