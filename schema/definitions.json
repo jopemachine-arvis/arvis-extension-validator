@@ -2,13 +2,13 @@
     "definitions": {
         "title": {
             "type": "string",
-            "description": "[keyword, scriptFilter] Description of the command to display in the search window. Define it carefully so that users know what this command is. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
-            "markdownDescription": "[keyword, scriptFilter] Description of the command to display in the search window. Define it carefully so that users know what this command is. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
+            "description": "[keyword, scriptFilter] Description of the command to display in the search window. Define it carefully so that users know what this command is. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/",
+            "markdownDescription": "[keyword, scriptFilter] Description of the command to display in the search window. Define it carefully so that users know what this command is. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/"
         },
         "subtitle": {
             "type": "string",
-            "description": "[keyword, scriptFilter] A additional description of the command to display in the search window. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
-            "markdownDescription": "[keyword, scriptFilter] A additional description of the command to display in the search window. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
+            "description": "[keyword, scriptFilter] A additional description of the command to display in the search window. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/",
+            "markdownDescription": "[keyword, scriptFilter] A additional description of the command to display in the search window. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/"
         },
         "argType": {
             "type": "string",
@@ -17,55 +17,55 @@
                 "optional",
                 "required"
             ],
-            "description": "[keyword, scriptFilter] Defines whether an argument is required for action execution. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/keyword-description.md#argtype",
-            "markdownDescription": "[keyword, scriptFilter] Defines whether an argument is required for action execution. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/keyword-description.md#argtype"
+            "description": "[keyword, scriptFilter] Defines whether an argument is required for action execution. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/keyword-description/#argtype",
+            "markdownDescription": "[keyword, scriptFilter] Defines whether an argument is required for action execution. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/keyword-description/#argtype"
         },
         "commandStr": {
             "type": "string",
-            "description": "[keyword, scriptFilter] Command to search for and execute commands. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
-            "markdownDescription": "[keyword, scriptFilter] Command to search for and execute commands. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
+            "description": "[keyword, scriptFilter] Command to search for and execute commands. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/",
+            "markdownDescription": "[keyword, scriptFilter] Command to search for and execute commands. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/"
         },
         "withspace": {
             "type": "boolean",
-            "description": "[scriptFilter] Indicates whether spaces are required to execute this command. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter",
-            "markdownDescription": "[scriptFilter] Indicates whether spaces are required to execute this command. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter"
+            "description": "[scriptFilter] Indicates whether spaces are required to execute this command. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#scriptFilter",
+            "markdownDescription": "[scriptFilter] Indicates whether spaces are required to execute this command. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#scriptFilter"
         },
         "runningSubtext": {
             "type": "string",
-            "description": "[scriptFilter] Sentence to display while scriptFilter is running. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter",
-            "markdownDescription": "[scriptFilter] Sentence to display while scriptFilter is running. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter"
+            "description": "[scriptFilter] Sentence to display while scriptFilter is running. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#scriptFilter",
+            "markdownDescription": "[scriptFilter] Sentence to display while scriptFilter is running. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#scriptFilter"
         },
         "scriptFilter": {
             "type": [
                 "string",
                 "object"
             ],
-            "description": "[scriptFilter] Scriptfilter to execute. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter",
-            "markdownDescription": "[scriptFilter] Scriptfilter to execute. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#scriptFilter"
+            "description": "[scriptFilter] Scriptfilter to execute. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#scriptFilter",
+            "markdownDescription": "[scriptFilter] Scriptfilter to execute. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#scriptFilter"
         },
         "script": {
             "type": [
                 "string",
                 "object"
             ],
-            "description": "[script] Script to execute. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#script",
-            "markdownDescription": "[script] Script to execute. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#script"
+            "description": "[script] Script to execute. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#script",
+            "markdownDescription": "[script] Script to execute. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#script"
         },
         "clipboardText": {
             "type": "string",
-            "description": "[clipboard] Text to copy to clipboard. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#clipboard",
-            "markdownDescription": "[clipboard] Text to copy to clipboard. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#clipboard"
+            "description": "[clipboard] Text to copy to clipboard. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#clipboard",
+            "markdownDescription": "[clipboard] Text to copy to clipboard. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#clipboard"
         },
         "notificationText": {
             "type": "string",
-            "description": "[notification] Text to show in notification. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#notification",
-            "markdownDescription": "[notification] Text to show in notification. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#notification"
+            "description": "[notification] Text to show in notification. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#notification",
+            "markdownDescription": "[notification] Text to show in notification. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#notification"
         },
         "condActions": {
             "type": "object",
             "additionalProperties": false,
-            "description": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
-            "markdownDescription": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "description": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#cond",
+            "markdownDescription": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#cond",
             "properties": {
                 "then": {
                     "$ref": "#/definitions/then"
@@ -77,8 +77,8 @@
         },
         "if": {
             "type": "object",
-            "description": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
-            "markdownDescription": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "description": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#cond",
+            "markdownDescription": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#cond",
             "additionalProperties": false,
             "defaultSnippets": [
                 {
@@ -103,29 +103,29 @@
         },
         "cond": {
             "type": "string",
-            "description": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
-            "markdownDescription": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond"
+            "description": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#cond",
+            "markdownDescription": "[cond] Divides the branch of execution flow by conditions. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#cond"
         },
         "then": {
             "type": "array",
-            "description": "[cond] If 'cond' is 'true' execute these actions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
-            "markdownDescription": "[cond] If 'cond' is 'true' execute these actions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "description": "[cond] If 'cond' is 'true' execute these actions. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#cond",
+            "markdownDescription": "[cond] If 'cond' is 'true' execute these actions. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#cond",
             "items": {
                 "$ref": "#/definitions/command"
             }
         },
         "else": {
             "type": "array",
-            "description": "[cond] If 'cond' is 'false' execute these actions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
-            "markdownDescription": "[cond] If 'cond' is 'false' execute these actions. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#cond",
+            "description": "[cond] If 'cond' is 'false' execute these actions. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#cond",
+            "markdownDescription": "[cond] If 'cond' is 'false' execute these actions. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#cond",
             "items": {
                 "$ref": "#/definitions/command"
             }
         },
         "keyDispatchingTarget": {
             "type": "object",
-            "description": "[keyDispatching] Key info for dispatching. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#keyDispatching",
-            "markdownDescription": "[keyDispatching] Key info for dispatching. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#keyDispatching",
+            "description": "[keyDispatching] Key info for dispatching. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#keyDispatching",
+            "markdownDescription": "[keyDispatching] Key info for dispatching. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#keyDispatching",
             "additionalProperties": false,
             "defaultSnippets": [
                 {
@@ -147,21 +147,21 @@
         },
         "key": {
             "type": "string",
-            "description": "[keyDispatching] Key to be dispatched. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#keyDispatching",
-            "markdownDescription": "[keyDispatching] Key to be dispatched. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#keyDispatching"
+            "description": "[keyDispatching] Key to be dispatched. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#keyDispatching",
+            "markdownDescription": "[keyDispatching] Key to be dispatched. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#keyDispatching"
         },
         "keyDispatchingModifiers": {
             "type": "array",
-            "description": "[keyDispatching] Modifier keys to be dispatched. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#keyDispatching",
-            "markdownDescription": "[keyDispatching] Modifier keys to be dispatched. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#keyDispatching"
+            "description": "[keyDispatching] Modifier keys to be dispatched. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#keyDispatching",
+            "markdownDescription": "[keyDispatching] Modifier keys to be dispatched. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#keyDispatching"
         },
         "arg": {
             "type": [
                 "string",
                 "object"
             ],
-            "description": "[arg] Select argument to pass in {query}. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#args",
-            "markdownDescription": "[arg] Select argument to pass in {query} . \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#args",
+            "description": "[arg] Select argument to pass in {query}. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#args",
+            "markdownDescription": "[arg] Select argument to pass in {query} . \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#args",
             "defaultSnippets": [
                 {
                     "label": "[arg] Select argument",
@@ -171,23 +171,23 @@
         },
         "target": {
             "type": "string",
-            "description": "[open] Target to open (url, file path). \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#open",
-            "markdownDescription": "[open] Target to open (url, file path). \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#open"
+            "description": "[open] Target to open (url, file path). \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#open",
+            "markdownDescription": "[open] Target to open (url, file path). \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#open"
         },
         "newInput": {
             "type": "string",
-            "description": "[resetInput] Renew Arvis searchbar's value with this string. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#resetInput",
-            "markdownDescription": "[resetInput] Renew Arvis searchbar's value with this string. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#resetInput"
+            "description": "[resetInput] Renew Arvis searchbar's value with this string. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#resetInput",
+            "markdownDescription": "[resetInput] Renew Arvis searchbar's value with this string. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#resetInput"
         },
         "hotkey": {
             "type": "string",
-            "description": "[hotkey] Hotkey to execute Action. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/hotkey-description.md",
-            "markdownDescription": "[hotkey] Hotkey to execute Action. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/hotkey-description.md"
+            "description": "[hotkey] Hotkey to execute Action. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/hotkey-description/",
+            "markdownDescription": "[hotkey] Hotkey to execute Action. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/hotkey-description/"
         },
         "type": {
             "type": "string",
-            "description": "[common] Action's type. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
-            "markdownDescription": "[common] Action's type. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
+            "description": "[common] Action's type. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/",
+            "markdownDescription": "[common] Action's type. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/",
             "enum": [
                 "args",
                 "clipboard",
@@ -216,16 +216,16 @@
                 "shift",
                 "fn"
             ],
-            "description": "[common] Modifier key which must be pressed to run this action. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#modifiers",
-            "markdownDescription": "[common] Modifier key which must be pressed to run this action. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md#modifiers"
+            "description": "[common] Modifier key which must be pressed to run this action. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#modifiers",
+            "markdownDescription": "[common] Modifier key which must be pressed to run this action. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/#modifiers"
         },
         "actions": {
             "type": "array",
             "items": {
                 "$ref": "#/definitions/command"
             },
-            "description": "[common] Action to trigger when executed by user. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
-            "markdownDescription": "[common] Action to trigger when executed by user. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
+            "description": "[common] Action to trigger when executed by user. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/",
+            "markdownDescription": "[common] Action to trigger when executed by user. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/"
         },
         "command": {
             "type": "object",
@@ -626,8 +626,8 @@
                     }
                 }
             ],
-            "description": "[common] Array of commands that users can use. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md",
-            "markdownDescription": "[common] Array of commands that users can use. \n\nhttps://github.com/jopemachine/arvis/blob/master/documents/action-description.md"
+            "description": "[common] Array of commands that users can use. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/",
+            "markdownDescription": "[common] Array of commands that users can use. \n\nhttps://jopemachine.github.io/arvis-docs/documents/extension-development/action-description/"
         }
     }
 }
