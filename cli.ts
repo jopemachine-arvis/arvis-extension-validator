@@ -1,9 +1,26 @@
 #!/usr/bin/env node
 import meow from 'meow';
 import fse from 'fs-extra';
+import chalk from 'chalk';
 import { getHelpStr } from './helpStr';
 import { validate } from './validator';
-import chalk from 'chalk';
+import { parse as parseJson5 } from 'json5';
+
+const readJson5 = async (filepath: string) => {
+  return new Promise((resolve, reject) => {
+    fse
+      .readFile(filepath, { encoding: 'utf-8' })
+      .then((content) => {
+        try {
+          resolve(parseJson5(content));
+        } catch (err) {
+          reject(err);
+        }
+        return null;
+      })
+      .catch(reject);
+  });
+};
 
 const cli = meow(getHelpStr(), {
   flags: {
@@ -24,7 +41,7 @@ if (
   process.exit(1);
 }
 
-fse.readJSON(cli.input[1]).then(jsonData => {
+readJson5(cli.input[1]).then(jsonData => {
   const { errorMsg, valid } = validate(
     jsonData,
     cli.input[0] as 'workflow' | 'plugin',
